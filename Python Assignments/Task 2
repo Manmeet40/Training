@@ -1,0 +1,129 @@
+(1)
+x = eval(input("Enter any number:"))
+if x%3 ==0 and x%5 ==0:
+    print("Consultadd Python Training") 
+elif x%3 ==0:
+    print("Consultadd")
+elif x%5 ==0:
+    print("C")
+
+(2)
+
+
+
+
+(3)
+a,b,c = 10,20,30
+avg = (a+b+c)/3
+print("avg =",avg)
+if avg>a and avg>b and avg>c:
+    print("Average is higher than a,b,c")
+else:
+    if avg>a and avg>b:
+        print("Average is higher than a,b,c")
+    elif avg>a and avg>c:
+        print("Average is higher than a,c")
+    elif avg>b and avg>c:
+        print("Average is higher than b,c")
+    elif avg>a:
+        print("Average is just higher than a")
+    elif avg>b:
+        print("Average is just higher than b")
+    elif avg>c:
+        print("Average is just higher than c")
+
+(4)
+while True:
+    statement:
+        user_input = int(input("Enter an integer number:"))
+        if user_input < 0:
+            print("It's over")
+            break
+        else:
+            print("Good Going! Enter negative number to exit else continue.")
+    except ValueError:
+        pass
+
+(5)
+lst = []
+for i in range(2000, 3201):
+    if i % 7 == 0 and i % 5 != 0:
+        lst.append(i)
+print("numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200")
+print(lst)
+
+(6)
+(i.)
+for i in x:
+TypeError: 'int' object is not iterable
+
+(ii.)
+0
+error
+1
+error
+2
+
+(iii.)
+0
+1
+2
+3
+4
+
+
+(7)
+for x in range(6):
+    if (x == 3 or x==6):
+        continue
+    print(x,end=' ')
+print("\n")
+
+(8)
+s = input("Input a string")
+d=l=0
+for c in s:
+    if c.isdigit():
+        d=d+1
+    elif c.isalpha():
+        l=l+1
+    else:
+        pass
+print("Letters", l)
+print("Digits", d)
+
+(9)
+while True:
+    user_input = int(input("Guess the lucky number: "))
+    if user_input == guess:
+        user_input, answer = input("Do you want to guess again?") #(Enter number & Yes to continue. Enter No to stop")
+        if user_input != guess and answer.lower() == 'yes':
+            continue
+        elif user_input == guess:
+            break
+        elif answer.lower == 'no':
+            break
+(10)
+counter = 0
+while counter < 5:
+    user_input = int(input("Guess the lucky number: "))
+    if user_input == guess:
+        print("Good guess!")
+        guess = random.randint(1, 100)
+    else:
+        print("Try again!")
+    counter += 1
+print("Game over!")
+
+(11)
+counter = 0
+while counter < 5:
+    user_input = int(input("Guess the lucky number: "))
+    if user_input == guess:
+        print("Good guess!")
+        break
+    else:
+        print("Try again!")
+    counter += 1
+print("Sorry but that was not very successful!")
+
