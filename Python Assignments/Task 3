@@ -13,6 +13,40 @@ l = [1,2,3,4,5]
 >>> l[2:]
 [3, 4, 5]
 
+(3.)
+from functools import reduce
+
+x=reduce(lambda x,y:x+y,[1,2,3,4])
+print(x)
+
+from functools import reduce
+
+x=reduce(lambda x,y:x*y,[1,2,3,4])
+print(x)
+
+(4.)
+list = [1,2,3,4]
+list.sort()
+print ("smallest element is:", min(list))
+
+list = [1,2,3,4]
+list.sort()
+print ("smallest element is:", max(list))
+
+(5.)
+x=filter(lambda x:x%2!=0,[1,3,6,8,11,12,15,16,20])
+print(list(x))
+
+(6.)
+def printValues():
+	l = list()
+	for i in range(1,31):
+		l.append(i**2)
+	print(l[:5])
+	print(l[-5:])
+
+printValues()
+
 (7.)
 a = [1,3,5,7,9,10]
 b = [2,4,6,8]
