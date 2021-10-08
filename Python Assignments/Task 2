@@ -8,9 +8,28 @@ elif x%5 ==0:
     print("C")
 
 (2)
-
-
-
+user_input1 = eval(input("""Enter your choice(choice):
+1. Addition
+2. Subtraction
+3. Division
+4. Multiplication
+5. Average
+"""))
+if user_input1 in [1, 2, 3, 4, 5]:
+    first = eval(input("Enter first number:"))
+    second = eval(input("Enter second number:"))
+    if user_input1 == 1:
+        print("Addition:", first + second)
+    elif user_input1 == 2:
+        print("Subtraction:", first - second)
+    elif user_input1 == 3:
+        print("Division:", first / second)
+    elif user_input1 == 4:
+        print("Multiplication:", first * second)
+    else:
+        first1 = eval(input("Enter the third number:"))
+        second1 = eval(input("Enter fourth number:"))
+        print("Average:", sum([first, second, first1, second1]) / 4)
 
 (3)
 a,b,c = 10,20,30
