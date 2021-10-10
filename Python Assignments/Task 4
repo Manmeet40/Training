@@ -1,0 +1,121 @@
+1.)
+def reversethestring(inputstring):
+	return inputstring[::-1]
+print(reversethestring("1234abcd"))
+
+2.)
+def string_test(s):
+    d={"Uppercase":0, "Lowercase":0}
+    for i in s:
+        if i.isupper():
+            d["Uppercase"]+=1
+        elif i.islower():
+            d["Lowercase"]+=1
+        else:
+            pass
+    print (f"Original String : {s}")
+    print ("No. of Upper case characters :", d["Uppercase"])
+    print ("No. of Lower case Characters :", d["Lowercase"])
+s = 'abcSdefPghijQkl'
+string_test(s)
+
+3.)
+def unique(lst):
+    s=set(lst)
+    new_lst=list(s)
+    print(f"Sample list: {lst}")
+    print(f"Unique list: {new_lst}")
+lst = [1,2,3,3,3,3,4,5]
+unique(lst)
+
+4.)
+def sortedhyphensequence(words):
+	wordssplit = words.split("-")
+	wordssplit.sort()
+	return ("-".join(wordssplit))
+print(sortedhyphensequence("green-red-yellow-black-white"))
+
+5.)
+
+lines = []
+while True:
+    s = input("Enter Lines :")
+    if s:
+        lines.append(s.upper())
+    else:
+        break
+for sentence in lines:
+    print(sentence)
+
+6.)
+def printValue(s1,s2):
+    print(int(s1)+int(s2))
+
+printValue("1","2")
+
+7.)
+def printValue(s1,s2):
+    len1 = len(s1)
+    len2 = len(s2)
+    if len1>len2:
+        print(s1)
+    elif len2>len1:
+        print(s2)
+    else:
+        print(s1)
+        print(s2)
+        
+printValue("one","eleven")
+
+8.)
+def printTuple():
+	l=list()
+	for i in range(1,21):
+		l.append(i**2)
+	print(tuple(l))
+		
+printTuple()
+
+9.)
+def showNumbers(limit):
+    for i in range(0,limit+3):
+        if i%2==0:
+            print("EVEN")
+        else:
+            print("ODD")
+
+10.)
+11.)
+li = [1,2,3,4,5,6,7,8,9,10]
+ 
+eve_num = map(lambda x: x**2, filter(lambda   x: x%2==0, li))
+ 
+print(list(eve_num))
+
+12.)
+def divide():
+    return 5/0
+
+try:
+    divide()
+except ZeroDivisionError as ze:
+    print("Not valid!!")
+except:
+    print("Any other exception")
+
+13.)
+
+14.)
+
+nl=[]
+for x in range(1500, 2701):
+    if (x%7==0) and (x%3!=0):
+        nl.append(str(x))
+print (','.join(nl))
+
+15.)
+
+
+16.)
+i.2
+ii. 
