@@ -1,0 +1,47 @@
+1.)
+
+try:
+    b = 5
+    print(b)
+    eval('a === 5')
+except SyntaxError:
+    print("syntax error")
+
+2.)
+import sys  
+try:
+    f = open('file1.txt','r')
+    f = sys.argv[1]
+except:
+    print("Enter valid filename.")
+else:
+    print("File not found")
+
+3.)
+try :
+    input = int(input("Enter a four digit number: "))
+    if input < 1000 or input > 9999:
+        raise ValueError
+except ValueError:
+    print("The length is too short/long !!! Please provide only four digits.")
+
+4.)
+
+6.)
+f=open("file1.txt","w")
+f.write("Hello i am a file\n")
+f.write("Where you need to return the data string\n")
+f.write("Which is of even length\n")
+f.write("Make sure you return the content in The same link as it is present\n")
+f.close()
+
+import sys
+fileName = open("file1.txt","r")
+
+for line in fileName.readlines():
+    words = line.split(" ")
+    for word in words:
+        if len(word)%2 ==0:
+            print(word)
+
+fileName.close()
